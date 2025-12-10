@@ -1,3 +1,4 @@
+import 'package:buku/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:buku/helpers/user_info.dart';
 import 'package:buku/ui/login_page.dart';
@@ -38,10 +39,10 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'BukuKu',
       debugShowCheckedModeBanner: false,
-      home: page,
+      home: SplashScreen(),
     );
   }
 }
